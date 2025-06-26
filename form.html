@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <center>   
+        <h1>USER PERSONAL INFORMATION</h1>
+        <label for="name">Enter your full name:</label>
+        <input type="text" id="name"  placeholder="ENTER YOUR NAME" required />
+        <br>
+       <label for="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required /> 
+        <br>
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" required />
+        <br>
+        <label for="conformpassword">conform your password:</label>
+        <input type="conformpassword" id="conformpassword" placeholder="CONFORM YOUR CODE" required />
+        <br>
+        <label for="country">select your country</label>
+        <select  id="country"  required />
+        <option value="" disabled selected>select your country</option>
+        <option value="option">option</option>
+        <option value="india">India</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option></select>
+        <br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone"  pattern="[l0-9][10]"  placeholder="ENTER YOUR PHONE NUMBER" />
+        <br>
+        <label>Enter your gender:</label>
+        <div class="gender group">
+            <input type="radio" name="gender" value="male" id="male" required>
+            <label for="male">Male</label>
+        <input type="radio"  name="gender" value="female" id="female" required />
+         <label for="male">female</label>
+        <input type="radio"  name="gender" value="others" id="others" required />
+        <label for="others">others</label>
+        </div>
+        <label for="dob">Enter your data birth:</label>
+        <input type="date" id="dob" required />
+        <br>
+        <label for="address">Enter your address:</label>
+        <input type="address" id="address"  placeholder="ENTER YOUR ADDRESS" required />
+        <br>
+       <input type="submit" value="submit"/></center>
+    </form>
+</body>
+</html>

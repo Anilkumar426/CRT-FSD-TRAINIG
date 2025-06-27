@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Bank Management System</h1>
+    </header>
+    <main>
+        <section class="account-creation">
+            <h2>Create Account</h2>
+            <form id="createAccountForm">
+                <label for="accountName">Account Holder Name:</label>
+                <input type="text" id="accountName" required />
+                <label for="initialDeposit">Initial Deposit:</label>
+                <input type="number" id="initialDeposit" min="0" required />
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+
+        <section class="account-info" style="display:none;">
+            <h2>Account Information</h2>
+            <p><strong>Account Holder:</strong> <span id="displayAccountName"></span></p>
+            <p><strong>Balance:</strong> $<span id="displayBalance">0.00</span></p>
+        </section>
+
+        <section class="transactions" style="display:none;">
+            <h2>Transactions</h2>
+            <form id="transactionForm">
+                <label for="transactionType">Transaction Type:</label>
+                <select id="transactionType">
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+                </select>
+                <label for="transactionAmount">Amount:</label>
+                <input type="number" id="transactionAmount" min="0" required />
+                <button type="submit">Submit</button>
+            </form>
+            <h3>Transaction History</h3>
+            <ul id="transactionHistory"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

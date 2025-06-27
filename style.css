@@ -1,0 +1,23 @@
+
+h1 {
+         color:black;
+         font-size:50px;
+        text-align: center;
+     }
+p {
+    color:blue;
+     font-size:50px;
+     text-align: center;
+    }
+    div{
+        background-color:green;
+        height: 175px;
+        width: 175px;
+        border: 7px;
+        border-color: brown;
+    }
+    button{
+        background-color: purple;
+        color: blueviolet;
+
+    }

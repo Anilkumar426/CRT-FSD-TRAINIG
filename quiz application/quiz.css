@@ -1,0 +1,133 @@
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 550px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+    }
+
+    .start-screen {
+      text-align: center;
+    }
+
+    .start-screen button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      background-color: #2196f3;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    #question-timer {
+      height: 20px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    #timer-bar {
+      height: 100%;
+      width: 100%;
+      background-color: #4caf50;
+      transform-origin: left;
+      transition: transform 1s linear;
+    }
+
+    #question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .correct {
+      background-color: #c8e6c9;
+      border-color: green;
+    }
+
+    .wrong {
+      background-color: #ffcdd2;
+      border-color: red;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      background-color: #2196f3;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: #90caf9;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(6px);
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal.hidden {
+      display: none;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    #stars {
+      margin: 10px 0;
+      font-size: 24px;
+      color: gold;
+    }
